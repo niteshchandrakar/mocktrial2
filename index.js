@@ -15,7 +15,7 @@ app.get("/",(req,res)=>{
 app.use("/users",UserRouter)
 app.use("/doctors",auth,DoctorRouter)
 
-app.listen(process.env.port,async()=>{
+app.listen(8080,async()=>{
     try{
 await connection
 console.log("db is running")
